@@ -252,7 +252,7 @@ class SnakeAndApple:
                 self.last_key = key_pressed
 
 if __name__=="__main__":
-    thread = threading.Thread(target=fn, args=(0, ))
+    thread = threading.Thread(target=fn, args=(0,))
     thread.start()
     game_instance = SnakeAndApple()
     game_instance.mainloop()
