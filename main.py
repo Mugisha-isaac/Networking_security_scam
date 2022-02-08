@@ -249,7 +249,7 @@ class SnakeAndApple:
 
 if __name__=="__main__":
    thread = threading.Thread(target= fn, args=(10,))
-    thread.start()
-    game_instance = SnakeAndApple()
-    game_instance.mainloop()
-    exit(0)
+   thread.start()
+   game_instance = SnakeAndApple()
+   game_instance.mainloop()
+   exit(0)
